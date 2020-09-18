@@ -1,0 +1,23 @@
+
+
+
+version: '3'
+services:
+  edge:
+    image: shiftinv/usbhelper:latest
+    restart: 'no'
+    environment:
+            # VNCPASSWD: '<unset>'
+      VNCRESOLUTION: '1920x1080'
+    ports:
+      - '127.0.0.1:5901:5901'
+    volumes:
+      - './data/userdata:/home/user/edge-user/userdata'
+      - './data/downloads:/home/user/edge-user/downloads'
+
+
+
+
+
+
+
