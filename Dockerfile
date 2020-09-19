@@ -12,6 +12,9 @@ USER user
 ENV WINEDLLOVERRIDES="mshtml=d;$WINEDLLOVERRIDES"
 
 # install chrome
+ENV INSTALLER_ROOT=/home/user/setuptools
+RUN mkdir $INSTALLER_ROOT
+WORKDIR $INSTALLER_ROOT
 COPY scripts/install_chrome.sh /scripts/install_chrome.sh
 RUN /scripts/install_chrome.sh
 
