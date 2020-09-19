@@ -1,5 +1,7 @@
 #docker-chrome
 
+!!! This image is currently not in a working state !!!
+
 Docker image with [chrome] running in Wine, based on shiftinv/wine-dotnet:staging-48-vnc
 
 ## Usage
