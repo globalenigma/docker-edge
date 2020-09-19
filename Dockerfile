@@ -13,7 +13,7 @@ ENV WINEDLLOVERRIDES="mshtml=d;$WINEDLLOVERRIDES"
 
 # install chrome
 COPY scripts/install_chrome.sh /scripts/install_chrome.sh
-RUN /scripts/install_chrome.sh
+#RUN /scripts/install_chrome.sh
 
 # add desktop icon
 
